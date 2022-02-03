@@ -17,6 +17,12 @@
 		656CD74627AB32C60009DDE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD71C27AB32C30009DDE9 /* ContentView.swift */; };
 		656CD74727AB32C60009DDE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656CD71D27AB32C60009DDE9 /* Assets.xcassets */; };
 		656CD74827AB32C60009DDE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656CD71D27AB32C60009DDE9 /* Assets.xcassets */; };
+		656CD75827AB331D0009DDE9 /* Spherical_Bessels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD75727AB331D0009DDE9 /* Spherical_Bessels.swift */; };
+		656CD75927AB331D0009DDE9 /* Spherical_Bessels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD75727AB331D0009DDE9 /* Spherical_Bessels.swift */; };
+		656CD75A27AB55C90009DDE9 /* Spherical_Bessels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD75727AB331D0009DDE9 /* Spherical_Bessels.swift */; };
+		656CD75C27AB55DA0009DDE9 /* Spherical_Bessels.swift in Frameworks */ = {isa = PBXBuildFile; fileRef = 656CD75727AB331D0009DDE9 /* Spherical_Bessels.swift */; };
+		656CD75D27AB55E10009DDE9 /* Spherical_Bessels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD75727AB331D0009DDE9 /* Spherical_Bessels.swift */; };
+		656CD75E27AB55EF0009DDE9 /* Spherical_Bessels.swift in Frameworks */ = {isa = PBXBuildFile; fileRef = 656CD75727AB331D0009DDE9 /* Spherical_Bessels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,7 @@
 		656CD73B27AB32C60009DDE9 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		656CD73F27AB32C60009DDE9 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		656CD74127AB32C60009DDE9 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		656CD75727AB331D0009DDE9 /* Spherical_Bessels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spherical_Bessels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656CD75E27AB55EF0009DDE9 /* Spherical_Bessels.swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656CD75C27AB55DA0009DDE9 /* Spherical_Bessels.swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +100,7 @@
 				656CD73227AB32C60009DDE9 /* Tests iOS */,
 				656CD73E27AB32C60009DDE9 /* Tests macOS */,
 				656CD72327AB32C60009DDE9 /* Products */,
+				656CD75B27AB55DA0009DDE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +109,7 @@
 			children = (
 				656CD71B27AB32C30009DDE9 /* Spherical_Bessel_FunctionsApp.swift */,
 				656CD71C27AB32C30009DDE9 /* ContentView.swift */,
+				656CD75727AB331D0009DDE9 /* Spherical_Bessels.swift */,
 				656CD71D27AB32C60009DDE9 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -139,6 +150,13 @@
 				656CD74127AB32C60009DDE9 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		656CD75B27AB55DA0009DDE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				656CD74527AB32C60009DDE9 /* ContentView.swift in Sources */,
+				656CD75827AB331D0009DDE9 /* Spherical_Bessels.swift in Sources */,
 				656CD74327AB32C60009DDE9 /* Spherical_Bessel_FunctionsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				656CD74627AB32C60009DDE9 /* ContentView.swift in Sources */,
+				656CD75927AB331D0009DDE9 /* Spherical_Bessels.swift in Sources */,
 				656CD74427AB32C60009DDE9 /* Spherical_Bessel_FunctionsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656CD75D27AB55E10009DDE9 /* Spherical_Bessels.swift in Sources */,
 				656CD73627AB32C60009DDE9 /* Tests_iOSLaunchTests.swift in Sources */,
 				656CD73427AB32C60009DDE9 /* Tests_iOS.swift in Sources */,
 			);
@@ -326,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656CD75A27AB55C90009DDE9 /* Spherical_Bessels.swift in Sources */,
 				656CD74227AB32C60009DDE9 /* Tests_macOSLaunchTests.swift in Sources */,
 				656CD74027AB32C60009DDE9 /* Tests_macOS.swift in Sources */,
 			);

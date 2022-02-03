@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import Spherical_Bessel_Functions
 
 class Tests_iOS: XCTestCase {
 
@@ -30,7 +31,66 @@ class Tests_iOS: XCTestCase {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+    
+    func testFirstBessel() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let xValue = 3.14159
+        var testValue = 0.0
+        let exactValue = -0.304241422390334070012314231310288833541605096519723554605
+        
+        testValue = calculateFirstSphericalBessel(xValue: xValue)
+        
+        XCTAssertEqual(testValue, exactValue, accuracy: 1.0e-8, "Was not equal to the specified resolution.")
+    }
 
+    func testSecondBessel() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let xValue = 3.14159
+        var testValue = 0.0
+        let exactValue = 0.2846163909175278108223286455901279738072008398586234609975
+        
+        testValue = calculateSecondSphericalBessel(xValue: xValue)
+        
+        XCTAssertEqual(testValue, exactValue, accuracy: 1.0e-8, "Was not equal to the specified resolution.")
+    }
+    
+    func testSphericalBessel() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        var xValue = 3.14159
+        var testValue = 0.0
+        
+        var testOrder = 12          // order of Bessel function
+        var start = testOrder+25    // used for downward recursion
+        
+        let exactValue = 3.8913453282141163022864104025060178271079663348975737E-7
+        
+        testValue = calculateDownwardRecursion(xValue: xValue, order: testOrder, start: start)
+        
+        
+        XCTAssertEqual(testValue, exactValue, accuracy: 1.0e-10, "Was not equal to the specified resolution.")
+        
+        // Test the quality of the values computed by the downward recursion
+        // We want the relative error to be less than 10e-10
+        // We'll use small x because smaller values lead to more issues with error
+        let x = 0.1
+        let orderList = [3, 5, 8]
+        let correctValues = [9.518519719e-6, 9.616310231e-10, 2.901200102e-16]
+        var error:Double
+        for (index, order) in orderList.enumerated() {
+            start = order+25
+            testValue = calculateDownwardRecursion(xValue: x, order: order, start: start)
+            error = abs(testValue - correctValues[index]) / correctValues[index]
+            XCTAssertEqual(testValue, error, accuracy: 1.0e-10, "Error was not less than the specified value.")
+        }
+        
+    }
+    
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
             // This measures how long it takes to launch your application.
