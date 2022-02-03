@@ -23,6 +23,8 @@
 		656CD75C27AB55DA0009DDE9 /* Spherical_Bessels.swift in Frameworks */ = {isa = PBXBuildFile; fileRef = 656CD75727AB331D0009DDE9 /* Spherical_Bessels.swift */; };
 		656CD75D27AB55E10009DDE9 /* Spherical_Bessels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656CD75727AB331D0009DDE9 /* Spherical_Bessels.swift */; };
 		656CD75E27AB55EF0009DDE9 /* Spherical_Bessels.swift in Frameworks */ = {isa = PBXBuildFile; fileRef = 656CD75727AB331D0009DDE9 /* Spherical_Bessels.swift */; };
+		656CD76327AB6CE70009DDE9 /* Discussion.txt in Resources */ = {isa = PBXBuildFile; fileRef = 656CD76227AB6CE60009DDE9 /* Discussion.txt */; };
+		656CD76427AB6CE70009DDE9 /* Discussion.txt in Resources */ = {isa = PBXBuildFile; fileRef = 656CD76227AB6CE60009DDE9 /* Discussion.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,7 @@
 		656CD73F27AB32C60009DDE9 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		656CD74127AB32C60009DDE9 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		656CD75727AB331D0009DDE9 /* Spherical_Bessels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spherical_Bessels.swift; sourceTree = "<group>"; };
+		656CD76227AB6CE60009DDE9 /* Discussion.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Discussion.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 		656CD71527AB32C30009DDE9 = {
 			isa = PBXGroup;
 			children = (
+				656CD76227AB6CE60009DDE9 /* Discussion.txt */,
 				656CD71A27AB32C30009DDE9 /* Shared */,
 				656CD72927AB32C60009DDE9 /* macOS */,
 				656CD73227AB32C60009DDE9 /* Tests iOS */,
@@ -284,6 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656CD76327AB6CE70009DDE9 /* Discussion.txt in Resources */,
 				656CD74727AB32C60009DDE9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656CD76427AB6CE70009DDE9 /* Discussion.txt in Resources */,
 				656CD74827AB32C60009DDE9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

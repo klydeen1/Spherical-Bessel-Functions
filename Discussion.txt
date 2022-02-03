@@ -1,0 +1,7 @@
+Landau 2.2.2:
+5) The up and down recursions give similar answers for x = 10.
+   One of the main causes of error in the upward recursion is that we're taking 
+   the difference of larger functions (the spherical Bessels of a lower l) to 
+   produce a "small" value for jl. Looking at Figure 2.1, it's clear that the 
+   difference between values of jl for different l is larger for smaller x. 
+   This means that smaller values of x will make the errors grow worse faster.

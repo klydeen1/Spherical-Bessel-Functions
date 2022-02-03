@@ -47,7 +47,10 @@ struct ContentView: View {
 
         for x in xValues
         {
-            guess += String(format: "x = %f, Downward, %7.5e, Upward, %7.5e\n", x, calculateDownwardRecursion(xValue: x, order: order, start: start),   calculateUpwardRecursion(xValue: x, order: order))
+            let down = calculateDownwardRecursion(xValue: x, order: order, start: start)
+            let up = calculateUpwardRecursion(xValue: x, order: order)
+            let percentDiff = abs(up - down) / (abs(up) + abs(down))
+            guess += String(format: "x = %f, Downward, %7.5e, Upward, %7.5e, Percent Difference, %7.5e\n", x, down, up, percentDiff)
         }
     }
 }
